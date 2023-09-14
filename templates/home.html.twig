@@ -3,6 +3,11 @@
 {% block body %}
     {# Comment #}
     <h1>Welcome to Home page!</h1>
+
+    <div>
+        {{ form(form) }}
+    </div>
+
     <div>
         {% for comment in comments %}
             <p>{{ comment.body }}</p>
