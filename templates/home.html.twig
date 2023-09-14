@@ -3,7 +3,9 @@
 {% block body %}
     {# Comment #}
     <h1>Welcome to Home page!</h1>
-    <p>
-        {{ search }}
-    </p>
+    <div>
+        {% for comment in comments %}
+            <p>{{ comment.body }}</p>
+        {% endfor %}
+    </div>
 {% endblock %}
